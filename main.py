@@ -19,7 +19,7 @@ def is_it_going_to_rain():
     """this will tell return True of False if it is going to rain in the next 18 hours """
     all_id =[ raining_id["weather"][0]["id"] for raining_id in data["list"]]
     for rain_id in all_id:
-        if rain_id < 700:
+        if rain_id > 700:
             return True
         else:
             return False
