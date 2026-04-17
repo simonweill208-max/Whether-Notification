@@ -25,5 +25,6 @@ jobs:
         env:
           TWILIO_ACCOUNT_SID: ${{ secrets.ACCOUNT_SID }}
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
           # Add any other API keys you used here
         run: python main.py
