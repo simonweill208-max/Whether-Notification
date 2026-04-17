@@ -23,7 +23,7 @@ jobs:
 
       - name: Run script
         env:
-          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.ACCOUNT_SID }}
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
           # Add any other API keys you used here
         run: python main.py
