@@ -2,7 +2,7 @@ import requests
 from twilio.rest import Client
 import os
 params = {
-    "appid": "7bba75b3218b1cc2b55bcfcd03b1207c",
+    "appid": os.environ.get("OWM_API_KEY")
     # "q": "Brooklyn,NY,US",
     "units": "imperial",
     "lon":-73.990997,
