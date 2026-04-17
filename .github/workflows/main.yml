@@ -3,7 +3,7 @@ name: Daily Weather Alert
 on:
   schedule:
     # This runs at 08:00 UTC (4:00 AM Brooklyn time) every day
-    - cron: '0 8 * * *'
+    - cron: '0 10 * * *'
   workflow_dispatch: # This allows you to run it manually for testing
 
 jobs:
